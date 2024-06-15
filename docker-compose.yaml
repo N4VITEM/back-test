@@ -1,0 +1,11 @@
+version: 'latest'
+services:
+ backtest:
+  image: postgres:latest
+  container_name: BackTestContainer
+  environment:
+   POSTGRES_USER: user
+   POSTGRES_PASSWORD: password
+   POSTGRES_DB: backtest
+  ports:
+   - "5432:5432"
